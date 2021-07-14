@@ -70,7 +70,8 @@ hr{
     padding: 20px;
     background-color: #E02C6D;
     color: white;
-    border-radius: 50px;transform: scale(1.2deg);
+    border-radius: 50px;
+    transform: scale(1.2) rotate(15deg);
 }
 .top-section-content a:hover{
     background-color: #3DBAFD;
@@ -78,8 +79,8 @@ hr{
     box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.459);
 }
 .top-section-pciture img{
-    width: 500px;
-    height: 450px;
+    width: 550px;
+    height: 500px;
     margin-right: 20px;
     transform: scale(1);
     margin-left: 70px;
@@ -200,6 +201,9 @@ hr{
         color: white;
         margin-left: 10px;
     }
+    .top-section-content a{
+        text-align: center;
+    }
     .top-section-pciture{
         margin-top: 70px;
     }
@@ -211,7 +215,7 @@ hr{
         transition: transform 3s ease;
     }
     .top-section-pciture img:hover{
-        transform: scale(1.1) rotate(1.5deg);
+        transform: scale(1.1) rotate(5deg);
     }
     .main-video h2{
         font-size: 45px;
@@ -287,7 +291,7 @@ hr{
         transition: transform 3s ease;
     }
     .top-section-content a{
-        margin-left: 50px;
+        text-align: center;
     }
     .top-section-pciture img:hover{
         transform: scale(1.1) rotate(1.5deg);
