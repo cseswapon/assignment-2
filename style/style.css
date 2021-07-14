@@ -1,0 +1,318 @@
+/* ----------------------------------------
+===== Google Font & common or utility =====
+------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    color: gray;
+}
+hr{
+    width: 100%;
+}
+/* ----------------------------------------
+  ============= Top Section ==============
+------------------------------------------- */
+.top-player-serch{
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.top-player-serch input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 40%;
+    background: #f1f1f1;
+}
+.top-player-serch input[type=text]:focus{
+    outline: 0px;
+}
+.top-player-serch button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid gray;
+    border-left: none;
+    cursor: pointer;
+}
+.top-player-serch button:hover{
+    background-color: #E02C6D;
+}
+.top-section{
+    margin: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: #2D25A0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 50px;
+    align-items: center;
+}
+.top-section-content h1{
+    margin-top: 0px;
+    font-size: 75px;
+    color: white;
+    margin-left: 100px;
+}
+.top-section-content a{
+    text-decoration: none;
+    width: 168px;
+    height: 44px;
+    margin-left: 100px;
+    padding: 20px;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 50px;transform: scale(1.2deg);
+}
+.top-section-content a:hover{
+    background-color: #3DBAFD;
+    color: #102345;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.459);
+}
+.top-section-pciture img{
+    width: 500px;
+    height: 450px;
+    margin-right: 20px;
+    transform: scale(1);
+    margin-left: 70px;
+    transition: transform 3s ease;
+}
+.top-section-pciture img:hover{
+    transform: scale(1.1) rotate(1.5deg);
+}
+/* ----------------------------------------
+  ============= Main Section ==============
+------------------------------------------- */
+.main-section{
+    background-color: #FFFFFF;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.card-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.main-card-section{
+    Width: 330px;
+    Height: 456px;
+    padding: 10px;
+    box-shadow: 2px 2px 12px gray;
+    border-radius: 10px;
+}
+.card-image img{
+    width: 310px;
+    height: 256px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.card-summery h2{
+    font-size: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+.card-summery p{
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 0px;
+}
+hr{
+    width: 100%;
+}
+.main-video h2{
+    font-size: 45px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    text-align: center;
+}
+.video-heighlight{
+    margin-top: 70px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 25px;
+}
+/* ----------------------------------------
+  ============= Footer Section ============
+------------------------------------------- */
+.footer-section{
+    width: 100%;
+    height: 200px;
+    background-color: #fcfcfc;
+}
+.main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 305px;
+    height: 80px;
+}
+.social-icon img{
+    height: 32px;
+    width: 32px;
+}
+.social-icon a{
+    margin-right: 11px;
+}
+/* ----------------------------------------
+  ============= Mobile Device ============
+  =============== Galaxy s5 ==============
+------------------------------------------- */
+@media only screen and (max-width:688px){
+    .top-player-serch {
+        display: flex;
+        align-items: center;
+        margin-left: 11px;
+        margin-bottom: 10px;
+    }
+    .top-section{
+        width: 100%;
+        height: 1000px;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-section-content h1{
+        margin-top: 0px;
+        width: 100%;
+        font-size: 60px;
+        color: white;
+        margin-left: 10px;
+    }
+    .top-section-pciture{
+        margin-top: 70px;
+    }
+    .top-section-pciture img{
+        width: 300px;
+        height: 250px;
+        margin: 0px;
+        transform: scale(1.1);
+        transition: transform 3s ease;
+    }
+    .top-section-pciture img:hover{
+        transform: scale(1.1) rotate(1.5deg);
+    }
+    .main-video h2{
+        font-size: 45px;
+        margin-top: 70px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .video-heighlight{
+        display: flex;
+        flex-direction: column;
+    }
+    .video video{
+        width: 340px;
+        height: 220px;
+        margin-bottom: 15px;
+    }
+    .main-section{
+        width: 100%;
+        margin-left: 7px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .card-section{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 1px;
+        margin-right: 0px;
+    }
+    .video-heighlight{
+        width: 50%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-section{
+        width: 100%;
+    }   
+}
+/* ----------------------------------------
+  ============== Apple Device =============
+  ================= i-pad ================
+------------------------------------------- */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .top-player-serch {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .top-section{
+        width: 100%;
+        height: 1000px;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .top-section-content h1{
+        margin-top: 0px;
+        width: 100%;
+        font-size: 70px;
+        color: white;
+        margin-left: 50px;
+    }
+    .top-section-pciture{
+        margin-top: 70px;
+    }
+    .top-section-pciture img{
+        width: 500px;
+        height: 450px;
+        margin: 0px;
+        margin-top: 10px;
+        transform: scale(1.1);
+        transition: transform 3s ease;
+    }
+    .top-section-content a{
+        margin-left: 50px;
+    }
+    .top-section-pciture img:hover{
+        transform: scale(1.1) rotate(1.5deg);
+    }
+    .main-section{
+        width: 100%;
+        margin-left: 17px;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    .card-section{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 1px;
+        margin-right: 0px;
+    }
+    .video-heighlight{
+        width: 50%;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .footer-section{
+        width: 100%;
+    }
+}
